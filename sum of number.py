@@ -1,5 +1,10 @@
-sum=0
-n=int(input())
-for i in range(1,n+1):
-	sum+=i
-	print(sum)
+num=2
+
+if num < 0:
+   print()
+else:
+   sum = 0
+   while(num > 0):
+       sum += num
+       num -= 1
+   print(sum)
