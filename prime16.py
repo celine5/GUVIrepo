@@ -1,11 +1,11 @@
-x,y=input().split()
-a = int(x)
-b = int(y)
+m,n=input().split()
+a = int(m)
+c = int(n)
  
  
 aaaa=""
  
-for num in range(a,b):
+for num in range(a,c):
  
    if num > 1:
        for i in range(2,num):
