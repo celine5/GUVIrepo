@@ -1,0 +1,13 @@
+CREATE DATABASE bird;
+USE bird;
+CREATE TABLE student(id int(1) NOT NULL,name varchar(12) NOT NULL,age int(2) NOT NULL,address varchar(14) NOT NULL,salary int(2) NOT NULL);
+INSERT INTO student(id,name,age,address,salary) VALUES(1,"Ramesh",32,"Ahmedabad",2000);
+INSERT INTO student(id,name,age,address,salary) VALUES(2,"Khilan",25,"Delhi",1500);
+INSERT INTO student(id,name,age,address,salary) VALUES(3,"kaushik",23,"Kota",2000);
+INSERT INTO student(id,name,age,address,salary) VALUES(4,"Chaitali",25,"Mumbai",6500);
+INSERT INTO student(id,name,age,address,salary) VALUES(5,"Hardik",27,"Bhopal",8500);
+INSERT INTO student(id,name,age,address,salary) VALUES(6,"Komal",22,"MP",4500);
+INSERT INTO student(id,name,age,address,salary) VALUES(7,"Muffy",24,"Indore",10000);
+SELECT * FROM student;
+update student SET address="Maharashtra" WHERE name="komal";
+SELECT * FROM student;
