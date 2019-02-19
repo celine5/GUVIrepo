@@ -1,0 +1,18 @@
+CREATE DATABASE bird;
+USE bird;
+CREATE TABLE student(id int(1) NOT NULL,name varchar(12) NOT NULL,age int(2) NOT NULL);
+INSERT INTO student(id,name,age) VALUES(1,"Vinodini",25);
+INSERT INTO student(id,name,age) VALUES(2,"Banu",27);
+INSERT INTO student(id,name,age) VALUES(3,"kaushik",23);
+INSERT INTO student(id,name,age) VALUES(4,"Praveen",25);
+INSERT INTO student(id,name,age) VALUES(5,"Kamal",22);
+INSERT INTO student(id,name,age) VALUES(6,"Malini",24);
+INSERT INTO student(id,name,age) VALUES(7,"Ramesh",32);
+SELECT * FROM student;
+SELECT * FROM student where age = '32' or age='22';
+SELECT * FROM student where age = '32' and age ='22';
+SELECT * FROM student ORDER BY name, age;
+SELECT lower(name) as full_name FROM student;
+SELECT upper(name) as full_name FROM student;
+SELECT mid(name,1,2) as full_name FROM student;
+SELECT COUNT(age) FROM student GROUP BY age;
